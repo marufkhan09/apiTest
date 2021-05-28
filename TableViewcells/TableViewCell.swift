@@ -76,12 +76,26 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as! BannerCollectionViewCell
         
         //print(jsonArray.count)
-//        for index in 0..<jsonArray[0].banners!.count {
-//            self.image_link = jsonArray[0].banners![index].image_link
+//        for index in 0..<bannersCount {
+//            image_link = jsonArray[0].banners![index].image_link
 //            imageView?.downloaded(from: image_link)
+//
 //        }
-        
-        
+        let i = indexPath.row
+
+        image_link = jsonArray[0].banners![i].image_link
+        print(image_link)
+//        var a = imageView?.downloaded(from: image_link)
+//
+//
+//
+//       // print(indexPath.row).
+//        let imageUrl =   jsonArray[0].banners
+//        print(imageUrl)
+//
+//
+//        cell.itemImage.image? = imageUrl[indexPath.row]
+        cell.bannerImage.downloaded(from: image_link)
         return cell
     }
     
