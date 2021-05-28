@@ -14,17 +14,17 @@ let url = "https://genocide.misfit-test.com//api/v1/home_pages/land"
 struct ResponseDatum: Codable {
     let banners: [Banner]?
     let archieves: [Archieve]?
-    let museumBlogs: [MuseumBlog]?
+    let museum_blogs: [MuseumBlog]?
     let events: [Event]?
     let notices: [Notice]?
-    let aboutUs: [AboutUs]?
+    let about_us: [AboutUs]?
     let galleries: [Banner]?
 
     enum CodingKeys: String, CodingKey {
         case banners, archieves
-        case museumBlogs
+        case museum_blogs
         case events, notices
-        case aboutUs
+        case about_us
         case galleries
     }
 }
@@ -38,7 +38,9 @@ struct AboutUs: Codable {
     let image_link: String
 
     enum CodingKeys: String, CodingKey {
-        case id, name, designation
+        case id
+        case name
+        case designation
         case description
         case facebook_link
         case twitter_link

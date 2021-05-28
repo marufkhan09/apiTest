@@ -19,6 +19,8 @@
 		CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA874E16265FAB32004FE620 /* TableViewCell.xib */; };
 		CA874E1D265FABC7004FE620 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */; };
 		CA874E1E265FABC7004FE620 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA874E1C265FABC7004FE620 /* BannerCollectionViewCell.xib */; };
+		CAFB7EFD266136DB00F744E2 /* ArchiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB7EFB266136DB00F744E2 /* ArchiveCollectionViewCell.swift */; };
+		CAFB7EFE266136DB00F744E2 /* ArchiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFB7EFC266136DB00F744E2 /* ArchiveCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CA874E16265FAB32004FE620 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA874E1C265FABC7004FE620 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAFB7EFB266136DB00F744E2 /* ArchiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAFB7EFC266136DB00F744E2 /* ArchiveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			children = (
 				CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */,
 				CA874E1C265FABC7004FE620 /* BannerCollectionViewCell.xib */,
+				CAFB7EFB266136DB00F744E2 /* ArchiveCollectionViewCell.swift */,
+				CAFB7EFC266136DB00F744E2 /* ArchiveCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 				CA26B720265EB6B800115C47 /* LaunchScreen.storyboard in Resources */,
 				CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */,
 				CA26B71D265EB6B800115C47 /* Assets.xcassets in Resources */,
+				CAFB7EFE266136DB00F744E2 /* ArchiveCollectionViewCell.xib in Resources */,
 				CA26B71B265EB6B600115C47 /* Main.storyboard in Resources */,
 				CA874E1E265FABC7004FE620 /* BannerCollectionViewCell.xib in Resources */,
 			);
@@ -242,6 +249,7 @@
 				CA874E17265FAB32004FE620 /* TableViewCell.swift in Sources */,
 				CA26B718265EB6B600115C47 /* ViewController.swift in Sources */,
 				CA26B714265EB6B600115C47 /* AppDelegate.swift in Sources */,
+				CAFB7EFD266136DB00F744E2 /* ArchiveCollectionViewCell.swift in Sources */,
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,
 			);
