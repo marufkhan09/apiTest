@@ -10,7 +10,6 @@ import Alamofire
 
 class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
-    var id: Int = 0
     var image_link = ""
     var jsonArray = [ResponseDatum]()
     var bannersCount: Int = 0
@@ -43,8 +42,14 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
             //print("about:\(self.aboutcount)")
             self.gallerycount = self.jsonArray[6].galleries!.count
             //print("gal:\(self.gallerycount)")
-            
         }
+//        networkCall().getData(from: url) {
+//
+//            self.bannersCount = networkCall().jsonData.count
+//            print(self.bannersCount)
+//            self.collectionView.reloadData()
+//        }
+        
         
         
         self.collectionView.delegate = self
@@ -58,7 +63,7 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
     }
     
     func getData(from url : String, completed: @escaping ()-> ()) {
-        
+
         AF.request(url, method: .get,encoding: JSONEncoding.default).responseJSON { (response) in
             guard let data = response.data
             else{
@@ -70,16 +75,15 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
                 DispatchQueue.main.async {
                     completed()
                 }
-                
-                
+
             }
             catch{
                 print("error decoding: \(error)")
-                
+
             }
-            
+
         }.resume()
-        
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

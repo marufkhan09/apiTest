@@ -7,12 +7,17 @@
 
 import UIKit
 
-class ArchiveCollectionViewCell: UICollectionViewCell {
-
+class ArchieveCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var vidImage: UIImageView!
+    @IBOutlet var titleDesc: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+
 
 }
 
