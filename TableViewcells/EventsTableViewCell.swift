@@ -21,7 +21,7 @@ class EventsTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollecti
         super.awakeFromNib()
         getData(from: url) {
             self.eventCollectionView.reloadData()
-            self.eventcount = self.jsonArray[3].museum_blogs!.count
+            self.eventcount = self.jsonArray[3].events!.count
             //print("archive:\(self.archivecount)")
         }
         

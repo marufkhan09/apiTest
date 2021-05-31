@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="355" height="238"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-bI-cRD">
-                        <rect key="frame" x="0.0" y="0.0" width="355" height="238"/>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-bI-cRD">
+                        <rect key="frame" x="0.0" y="0.0" width="285" height="238"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-E9-rE6">
                                 <rect key="frame" x="0.0" y="0.0" width="284" height="158"/>

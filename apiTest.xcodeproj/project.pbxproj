@@ -15,6 +15,18 @@
 		CA26B71D265EB6B800115C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA26B71C265EB6B800115C47 /* Assets.xcassets */; };
 		CA26B720265EB6B800115C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA26B71E265EB6B800115C47 /* LaunchScreen.storyboard */; };
 		CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26B728265EB6E800115C47 /* ResponseData.swift */; };
+		CA4312A726650E8F00861D59 /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A526650E8F00861D59 /* TourTableViewCell.swift */; };
+		CA4312A826650E8F00861D59 /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312A626650E8F00861D59 /* TourTableViewCell.xib */; };
+		CA4312AD266512BC00861D59 /* AboutUSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312AB266512BC00861D59 /* AboutUSTableViewCell.swift */; };
+		CA4312AE266512BC00861D59 /* AboutUSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312AC266512BC00861D59 /* AboutUSTableViewCell.xib */; };
+		CA4312B2266512D500861D59 /* AboutUSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312B0266512D500861D59 /* AboutUSCollectionViewCell.swift */; };
+		CA4312B3266512D500861D59 /* AboutUSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312B1266512D500861D59 /* AboutUSCollectionViewCell.xib */; };
+		CA4312B7266514BB00861D59 /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312B5266514BB00861D59 /* QuizTableViewCell.swift */; };
+		CA4312B8266514BB00861D59 /* QuizTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312B6266514BB00861D59 /* QuizTableViewCell.xib */; };
+		CA4312BC2665154600861D59 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312BA2665154600861D59 /* GalleryTableViewCell.swift */; };
+		CA4312BD2665154600861D59 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */; };
+		CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */; };
+		CA4312C22665155B00861D59 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */; };
 		CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */; };
 		CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */; };
 		CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C926638CF400699CB2 /* networkCall.swift */; };
@@ -51,6 +63,18 @@
 		CA26B71F265EB6B800115C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA26B721265EB6B800115C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA26B728265EB6E800115C47 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		CA4312A526650E8F00861D59 /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
+		CA4312A626650E8F00861D59 /* TourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourTableViewCell.xib; sourceTree = "<group>"; };
+		CA4312AB266512BC00861D59 /* AboutUSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUSTableViewCell.swift; sourceTree = "<group>"; };
+		CA4312AC266512BC00861D59 /* AboutUSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUSTableViewCell.xib; sourceTree = "<group>"; };
+		CA4312B0266512D500861D59 /* AboutUSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUSCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA4312B1266512D500861D59 /* AboutUSCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUSCollectionViewCell.xib; sourceTree = "<group>"; };
+		CA4312B5266514BB00861D59 /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
+		CA4312B6266514BB00861D59 /* QuizTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizTableViewCell.xib; sourceTree = "<group>"; };
+		CA4312BA2665154600861D59 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
+		CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveTableViewCell.swift; sourceTree = "<group>"; };
 		CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveTableViewCell.xib; sourceTree = "<group>"; };
 		CA4E88C926638CF400699CB2 /* networkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkCall.swift; sourceTree = "<group>"; };
@@ -152,6 +176,14 @@
 				CABDB4142664EED200E2CC3D /* EventsTableViewCell.xib */,
 				CABDB421266502D800E2CC3D /* NoticeTableViewCell.swift */,
 				CABDB422266502D800E2CC3D /* NoticeTableViewCell.xib */,
+				CA4312A526650E8F00861D59 /* TourTableViewCell.swift */,
+				CA4312A626650E8F00861D59 /* TourTableViewCell.xib */,
+				CA4312AB266512BC00861D59 /* AboutUSTableViewCell.swift */,
+				CA4312AC266512BC00861D59 /* AboutUSTableViewCell.xib */,
+				CA4312B5266514BB00861D59 /* QuizTableViewCell.swift */,
+				CA4312B6266514BB00861D59 /* QuizTableViewCell.xib */,
+				CA4312BA2665154600861D59 /* GalleryTableViewCell.swift */,
+				CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */,
 			);
 			path = TableViewcells;
 			sourceTree = "<group>";
@@ -169,6 +201,10 @@
 				CABDB40F2664EEB600E2CC3D /* EventsCollectionViewCell.xib */,
 				CABDB4182664FE7B00E2CC3D /* NoticeCollectionViewCell.swift */,
 				CABDB4192664FE7B00E2CC3D /* NoticeCollectionViewCell.xib */,
+				CA4312B0266512D500861D59 /* AboutUSCollectionViewCell.swift */,
+				CA4312B1266512D500861D59 /* AboutUSCollectionViewCell.xib */,
+				CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */,
+				CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -232,17 +268,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4312C22665155B00861D59 /* GalleryCollectionViewCell.xib in Resources */,
+				CA4312B8266514BB00861D59 /* QuizTableViewCell.xib in Resources */,
 				CABDB4162664EED200E2CC3D /* EventsTableViewCell.xib in Resources */,
 				CABDB4032664D31300E2CC3D /* MuseumCollectionViewCell.xib in Resources */,
 				CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */,
+				CA4312BD2665154600861D59 /* GalleryTableViewCell.xib in Resources */,
 				CA26B720265EB6B800115C47 /* LaunchScreen.storyboard in Resources */,
 				CABDB41B2664FE7B00E2CC3D /* NoticeCollectionViewCell.xib in Resources */,
 				CABDB4112664EEB600E2CC3D /* EventsCollectionViewCell.xib in Resources */,
 				CABDB424266502D800E2CC3D /* NoticeTableViewCell.xib in Resources */,
+				CA4312AE266512BC00861D59 /* AboutUSTableViewCell.xib in Resources */,
+				CA4312B3266512D500861D59 /* AboutUSCollectionViewCell.xib in Resources */,
 				CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */,
 				CA26B71D265EB6B800115C47 /* Assets.xcassets in Resources */,
 				CAFB7EFE266136DB00F744E2 /* ArchieveCollectionViewCell.xib in Resources */,
 				CABDB40C2664D35600E2CC3D /* MuseumTableViewCell.xib in Resources */,
+				CA4312A826650E8F00861D59 /* TourTableViewCell.xib in Resources */,
 				CA26B71B265EB6B600115C47 /* Main.storyboard in Resources */,
 				CA874E1E265FABC7004FE620 /* BannerCollectionViewCell.xib in Resources */,
 			);
@@ -299,19 +341,25 @@
 			files = (
 				CA874E1D265FABC7004FE620 /* BannerCollectionViewCell.swift in Sources */,
 				CA874E17265FAB32004FE620 /* TableViewCell.swift in Sources */,
+				CA4312B2266512D500861D59 /* AboutUSCollectionViewCell.swift in Sources */,
 				CABDB4152664EED200E2CC3D /* EventsTableViewCell.swift in Sources */,
 				CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */,
 				CA26B718265EB6B600115C47 /* HomeViewController.swift in Sources */,
 				CA26B714265EB6B600115C47 /* AppDelegate.swift in Sources */,
 				CABDB4102664EEB600E2CC3D /* EventsCollectionViewCell.swift in Sources */,
+				CA4312BC2665154600861D59 /* GalleryTableViewCell.swift in Sources */,
 				CAFB7EFD266136DB00F744E2 /* ArchieveCollectionViewCell.swift in Sources */,
 				CABDB423266502D800E2CC3D /* NoticeTableViewCell.swift in Sources */,
+				CA4312AD266512BC00861D59 /* AboutUSTableViewCell.swift in Sources */,
 				CABDB4022664D31300E2CC3D /* MuseumCollectionViewCell.swift in Sources */,
+				CA4312B7266514BB00861D59 /* QuizTableViewCell.swift in Sources */,
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,
 				CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */,
 				CABDB41A2664FE7B00E2CC3D /* NoticeCollectionViewCell.swift in Sources */,
 				CABDB40B2664D35600E2CC3D /* MuseumTableViewCell.swift in Sources */,
+				CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */,
+				CA4312A726650E8F00861D59 /* TourTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
