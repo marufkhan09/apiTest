@@ -43,6 +43,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.register(UINib.init(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TVCell")
         tableView.register(UINib.init(nibName: "ArchieveTableViewCell", bundle: nil), forCellReuseIdentifier: "ArchieveTableViewCell")
+        tableView.register(UINib.init(nibName: "MuseumTableViewCell", bundle: nil), forCellReuseIdentifier: "MuseumTableViewCell")
         self.tableView.dataSource = self
         self.tableView.delegate = self
         //getData(from: url)
@@ -85,6 +86,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if i == 1 {
             return 395
         }
+        if i == 2 {
+            return 464
+        }
         
         return 200
     }
@@ -101,6 +105,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if i == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ArchieveTableViewCell", for: indexPath) as! ArchieveTableViewCell
+            return cell
+        }
+        if i == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MuseumTableViewCell", for: indexPath) as! MuseumTableViewCell
             return cell
         }
         

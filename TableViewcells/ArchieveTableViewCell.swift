@@ -61,19 +61,21 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         }.resume()
 
     }
+
     
-    func generateThumbnail(path: URL) -> UIImage? {
+
+    func getThumbnailImage(forUrl url: URL) -> UIImage? {
+        let asset: AVAsset = AVAsset(url: url)
+        let imageGenerator = AVAssetImageGenerator(asset: asset)
+
         do {
-            let asset = AVURLAsset(url: path, options: nil)
-            let imgGenerator = AVAssetImageGenerator(asset: asset)
-            imgGenerator.appliesPreferredTrackTransform = true
-            let cgImage = try imgGenerator.copyCGImage(at: CMTimeMake(value: 0, timescale: 1), actualTime: nil)
-            let thumbnail = UIImage(cgImage: cgImage)
-            return thumbnail
+            let thumbnailImage = try imageGenerator.copyCGImage(at: CMTimeMake(value: 1, timescale: 60) , actualTime: nil)
+            return UIImage(cgImage: thumbnailImage)
         } catch let error {
-            print("*** Error generating thumbnail: \(error.localizedDescription)")
-            return nil
+            print(error)
         }
+
+        return nil
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -88,11 +90,11 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
 //        image_link = jsonArray[0].banners![i].image_link
 //        cell.bannerImage.downloaded(from: image_link)
         cell.titleDesc.text = jsonArray[1].archieves![i].title
+        print(cell.titleDesc.text)
         video_link = jsonArray[1].archieves![i].video_url
-        cell.vidImage.image = self.generateThumbnail(path: URL(string: video_link)!)
-        
-       
-        
+        print(video_link)
+        cell.vidImage.image = getThumbnailImage(forUrl:URL(string: video_link)!)
+
         return cell
     }
     
