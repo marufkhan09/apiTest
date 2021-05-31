@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,32 +16,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum Blogs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN1-wR-0Az">
-                        <rect key="frame" x="20" y="41" width="107" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Museum Blogs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN1-wR-0Az">
+                        <rect key="frame" x="20" y="50" width="107" height="19"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqX-bl-Dbo">
-                        <rect key="frame" x="312" y="35" width="45" height="27"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title="View All">
-                            <color key="titleColor" red="0.98039215686274506" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                    </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-9c-Ndr">
-                        <rect key="frame" x="20" y="70.5" width="40" height="4"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="4" id="fhW-DV-mC4"/>
-                            <constraint firstAttribute="width" constant="40" id="tKe-Kj-RSZ"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-9c-Ndr">
+                        <rect key="frame" x="20" y="79" width="40" height="4"/>
                     </imageView>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tIz-2k-8OQ">
-                        <rect key="frame" x="20" y="120" width="335" height="302"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="302" id="tMf-a4-OuO"/>
-                        </constraints>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tIz-2k-8OQ">
+                        <rect key="frame" x="20" y="124" width="335" height="302"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AFi-Kb-VZ8">
                             <size key="itemSize" width="279" height="302"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -50,19 +35,30 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqX-bl-Dbo">
+                        <rect key="frame" x="310" y="55" width="43" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="W9h-0M-VIl"/>
+                            <constraint firstAttribute="width" constant="43" id="u6M-nJ-E74"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="View All">
+                            <color key="titleColor" red="0.98039215686274506" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="tIz-2k-8OQ" firstAttribute="leading" secondItem="zaL-9c-Ndr" secondAttribute="leading" id="3BM-by-C8Z"/>
-                    <constraint firstItem="pqX-bl-Dbo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="Adb-E7-ih8"/>
-                    <constraint firstItem="RN1-wR-0Az" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="DHz-Fd-YQv"/>
-                    <constraint firstItem="pqX-bl-Dbo" firstAttribute="leading" secondItem="RN1-wR-0Az" secondAttribute="trailing" constant="185" id="HcW-If-4p6"/>
-                    <constraint firstItem="tIz-2k-8OQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="J1b-Dk-dtz"/>
-                    <constraint firstItem="zaL-9c-Ndr" firstAttribute="top" secondItem="RN1-wR-0Az" secondAttribute="bottom" constant="10" id="JDK-ZJ-EhF"/>
-                    <constraint firstItem="zaL-9c-Ndr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="SBd-e0-JjV"/>
-                    <constraint firstItem="RN1-wR-0Az" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="j4S-eC-4Rg"/>
-                    <constraint firstItem="tIz-2k-8OQ" firstAttribute="top" secondItem="zaL-9c-Ndr" secondAttribute="bottom" constant="45.5" id="kBR-pI-06Y"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="tIz-2k-8OQ" secondAttribute="bottom" constant="31" id="rfT-fZ-1Ax"/>
-                    <constraint firstAttribute="trailing" secondItem="pqX-bl-Dbo" secondAttribute="trailing" constant="18" id="yvL-c6-C2e"/>
+                    <constraint firstItem="zaL-9c-Ndr" firstAttribute="leading" secondItem="tIz-2k-8OQ" secondAttribute="leading" id="2EH-ep-RmG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tIz-2k-8OQ" secondAttribute="bottom" constant="27" id="5rD-1x-5qA"/>
+                    <constraint firstItem="tIz-2k-8OQ" firstAttribute="top" secondItem="zaL-9c-Ndr" secondAttribute="bottom" constant="41" id="9Ga-iG-kkG"/>
+                    <constraint firstItem="tIz-2k-8OQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="HrV-5q-Ctt"/>
+                    <constraint firstItem="RN1-wR-0Az" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="c5V-TC-ggs"/>
+                    <constraint firstItem="RN1-wR-0Az" firstAttribute="firstBaseline" secondItem="pqX-bl-Dbo" secondAttribute="firstBaseline" id="cji-kt-cKg"/>
+                    <constraint firstItem="zaL-9c-Ndr" firstAttribute="top" secondItem="RN1-wR-0Az" secondAttribute="bottom" constant="10" id="dOJ-b9-diZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pqX-bl-Dbo" secondAttribute="trailing" constant="2" id="h9e-ng-uHf"/>
+                    <constraint firstItem="RN1-wR-0Az" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="l0A-Jp-69b"/>
+                    <constraint firstItem="pqX-bl-Dbo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="suj-G7-ah4"/>
+                    <constraint firstItem="RN1-wR-0Az" firstAttribute="leading" secondItem="zaL-9c-Ndr" secondAttribute="leading" id="ujb-6T-xBv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -75,8 +71,5 @@
     </objects>
     <resources>
         <image name="Rectangle 611" width="40" height="4"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

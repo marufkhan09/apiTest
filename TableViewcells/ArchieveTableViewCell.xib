@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,33 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="395"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Birer Konthe Bir Gatha'- Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99D-nc-ime">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="'Birer Konthe Bir Gatha'- Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99D-nc-ime">
                         <rect key="frame" x="20" y="50" width="235.5" height="19"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="19" id="v2H-Lu-L0d"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="5CF-um-Iun">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="5CF-um-Iun">
                         <rect key="frame" x="20" y="79" width="40" height="4"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="4" id="4ME-Al-gTc"/>
-                            <constraint firstAttribute="width" constant="40" id="QP2-Uc-ET1"/>
-                        </constraints>
                     </imageView>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8tS-Yj-fV7">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8tS-Yj-fV7">
                         <rect key="frame" x="20" y="124" width="335" height="238"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P64-7L-YLY">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="355" height="238"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-IH-L0C">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-IH-L0C">
                         <rect key="frame" x="310" y="55" width="45" height="27"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <state key="normal" title="View All">
@@ -52,17 +44,16 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="99D-nc-ime" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="06b-cI-5Bj"/>
-                    <constraint firstItem="99D-nc-ime" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KVP-bm-EuO"/>
-                    <constraint firstItem="8tS-Yj-fV7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Um7-1J-fEO"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="8tS-Yj-fV7" secondAttribute="bottom" constant="22" id="VkM-YU-v8h"/>
-                    <constraint firstItem="5CF-um-Iun" firstAttribute="top" secondItem="99D-nc-ime" secondAttribute="bottom" constant="10" id="aZz-yh-W3z"/>
-                    <constraint firstAttribute="trailing" secondItem="8tS-Yj-fV7" secondAttribute="trailing" constant="20" id="cGj-h2-NWX"/>
-                    <constraint firstItem="8tS-Yj-fV7" firstAttribute="top" secondItem="5CF-um-Iun" secondAttribute="bottom" constant="41" id="eU6-yT-vUk"/>
-                    <constraint firstItem="5CF-um-Iun" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fEm-bA-gpJ"/>
-                    <constraint firstItem="5Mg-IH-L0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="55" id="gsB-F1-Bcp"/>
-                    <constraint firstItem="5Mg-IH-L0C" firstAttribute="leading" secondItem="99D-nc-ime" secondAttribute="trailing" constant="54.5" id="uT5-6d-rcX"/>
-                    <constraint firstAttribute="trailing" secondItem="5Mg-IH-L0C" secondAttribute="trailing" constant="20" id="x0q-wB-2Ei"/>
+                    <constraint firstItem="5Mg-IH-L0C" firstAttribute="trailing" secondItem="8tS-Yj-fV7" secondAttribute="trailing" id="0qv-oI-4k1"/>
+                    <constraint firstItem="99D-nc-ime" firstAttribute="leading" secondItem="5CF-um-Iun" secondAttribute="leading" id="82j-du-lis"/>
+                    <constraint firstItem="8tS-Yj-fV7" firstAttribute="top" secondItem="5Mg-IH-L0C" secondAttribute="bottom" constant="42" id="EN8-UE-BxK"/>
+                    <constraint firstItem="8tS-Yj-fV7" firstAttribute="top" secondItem="5CF-um-Iun" secondAttribute="bottom" constant="41" id="G9v-Ax-9kj"/>
+                    <constraint firstItem="5CF-um-Iun" firstAttribute="leading" secondItem="8tS-Yj-fV7" secondAttribute="leading" id="H0F-AA-H5e"/>
+                    <constraint firstItem="5Mg-IH-L0C" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="O9I-cY-lit"/>
+                    <constraint firstItem="5CF-um-Iun" firstAttribute="top" secondItem="99D-nc-ime" secondAttribute="bottom" constant="10" id="TGA-Sc-pd0"/>
+                    <constraint firstItem="99D-nc-ime" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Xbk-03-chn"/>
+                    <constraint firstItem="5Mg-IH-L0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oPs-A2-tHr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8tS-Yj-fV7" secondAttribute="bottom" constant="22" id="w8E-vU-QtA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -76,8 +67,5 @@
     </objects>
     <resources>
         <image name="Rectangle 611" width="40" height="4"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

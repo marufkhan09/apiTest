@@ -86,13 +86,8 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArchieveCollectionViewCell", for: indexPath) as! ArchieveCollectionViewCell
 
         let i = indexPath.row
-        //main link
-//        image_link = jsonArray[0].banners![i].image_link
-//        cell.bannerImage.downloaded(from: image_link)
         cell.titleDesc.text = jsonArray[1].archieves![i].title
-        print(cell.titleDesc.text)
         video_link = jsonArray[1].archieves![i].video_url
-        print(video_link)
         cell.vidImage.image = getThumbnailImage(forUrl:URL(string: video_link)!)
 
         return cell
