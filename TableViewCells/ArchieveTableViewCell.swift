@@ -10,18 +10,19 @@ import Alamofire
 import AVFoundation
 class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet var archievelbl: UILabel!
     @IBOutlet var viewAll: UIButton!
+    @IBOutlet var archievelbl: UILabel!
     @IBOutlet var arcCollectionView: UICollectionView!
     var archievecount: Int = 0
     var video_link = ""
     var jsonArray = [ResponseDatum]()
+    var audioArray = [AudioList]()
     override func awakeFromNib() {
         super.awakeFromNib()
         getData(from: url) {
             self.arcCollectionView.reloadData()
             self.archievecount = self.jsonArray[1].archieves!.count
-            //print("archive:\(self.archivecount)")
+
         }
         
         self.arcCollectionView.delegate = self
@@ -36,7 +37,14 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         // Configure the view for the selected state
     }
 
-
+//    @IBAction func viewAll(_ sender: Any) {
+//        
+//        getAudioDetail {
+//            print("success")
+//        }
+//        
+//    }
+    
     
     func getData(from url : String, completed: @escaping ()-> ()) {
 
@@ -61,6 +69,33 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         }.resume()
 
     }
+    
+    func getAudioDetail(completed: @escaping ()-> ()) {
+        
+        let allAudio = "\(base_url)"+"api/v1/audio_books/list"
+        AF.request(allAudio, method: .get,encoding: JSONEncoding.default).responseJSON { (response) in
+            guard let data = response.data
+            else{
+                return
+            }
+            do{
+                self.audioArray = try JSONDecoder().decode([AudioList].self, from: data)
+                print(self.audioArray)
+                
+                DispatchQueue.main.async {
+                    completed()
+                }
+
+            }
+            catch{
+                print("error decoding: \(error)")
+
+            }
+
+        }.resume()
+
+    }
+    
 
     
 
@@ -92,5 +127,8 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
 
         return cell
     }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
     
 }

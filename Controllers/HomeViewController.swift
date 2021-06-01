@@ -116,18 +116,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 200
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         let i = indexPath.row
         
         if i == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TVCell", for: indexPath) as! TableViewCell
+            
             return cell
             
         }
         if i == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ArchieveTableViewCell", for: indexPath) as! ArchieveTableViewCell
+            cell.viewAll.tag = i
+            cell.viewAll.addTarget(self, action: #selector(HomeViewController.buttonTapped(_:)), for: UIControl.Event.touchUpInside)
             cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 0.5045802183)
             return cell
         }
@@ -173,6 +177,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         
         return UITableViewCell()
+    }
+    
+    @objc func buttonTapped(_ sender:UIButton!){
+        self.performSegue(withIdentifier: "allAudio", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "allAudio") {
+            if let destination = segue.destination as? AllAudioBooksViewController {
+
+               if let button:UIButton = sender as! UIButton? {
+                   print(button.tag) //optional
+                   //destination.valueViaSegue = button.tag
+               }
+            }
+        }
     }
     
 

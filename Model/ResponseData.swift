@@ -8,8 +8,8 @@
 
 import Foundation
 
-
-let url = "https://genocide.misfit-test.com//api/v1/home_pages/land"
+let base_url = "https://genocide.misfit-test.com/"
+let url = "https://genocide.misfit-test.com/api/v1/home_pages/land"
 // MARK: - ResponseDatum
 struct ResponseDatum: Codable {
     let banners: [Banner]?

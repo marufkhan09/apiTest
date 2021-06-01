@@ -53,11 +53,28 @@
                     <navigationItem key="navigationItem" id="q2Q-vF-FzC"/>
                     <connections>
                         <outlet property="tableView" destination="tae-zE-dqe" id="6Ez-jA-VXy"/>
+                        <segue destination="Q5c-6u-xOM" kind="show" identifier="allAudio" id="Ljv-XE-w15"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khk-s4-OEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1400" y="-279.24107142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="irB-Z0-R0x">
+            <objects>
+                <viewController id="Q5c-6u-xOM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="42J-gd-ESH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2mJ-Yg-jOr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KfE-7Y-AgE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSc-Ow-9bo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="-279"/>
         </scene>
         <!--Map-->
         <scene sceneID="aXi-cw-4wH">

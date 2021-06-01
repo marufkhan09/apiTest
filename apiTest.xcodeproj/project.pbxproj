@@ -60,6 +60,8 @@
 		CABDB41B2664FE7B00E2CC3D /* NoticeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABDB4192664FE7B00E2CC3D /* NoticeCollectionViewCell.xib */; };
 		CABDB423266502D800E2CC3D /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABDB421266502D800E2CC3D /* NoticeTableViewCell.swift */; };
 		CABDB424266502D800E2CC3D /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABDB422266502D800E2CC3D /* NoticeTableViewCell.xib */; };
+		CABFAAC92666476A0092E557 /* AudioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABFAAC82666476A0092E557 /* AudioList.swift */; };
+		CABFAACC266659330092E557 /* AllAudioBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */; };
 		CAFB7EFD266136DB00F744E2 /* ArchieveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB7EFB266136DB00F744E2 /* ArchieveCollectionViewCell.swift */; };
 		CAFB7EFE266136DB00F744E2 /* ArchieveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFB7EFC266136DB00F744E2 /* ArchieveCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,8 @@
 		CABDB4192664FE7B00E2CC3D /* NoticeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeCollectionViewCell.xib; sourceTree = "<group>"; };
 		CABDB421266502D800E2CC3D /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
 		CABDB422266502D800E2CC3D /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		CABFAAC82666476A0092E557 /* AudioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioList.swift; sourceTree = "<group>"; };
+		CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAudioBooksViewController.swift; sourceTree = "<group>"; };
 		CAFB7EFB266136DB00F744E2 /* ArchieveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAFB7EFC266136DB00F744E2 /* ArchieveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +203,7 @@
 				CA47E23A266611DA00CA981C /* MapViewController.swift */,
 				CA47E23D2666120D00CA981C /* ProfileViewController.swift */,
 				CA47E2402666122E00CA981C /* MoreViewController.swift */,
+				CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CA26B728265EB6E800115C47 /* ResponseData.swift */,
+				CABFAAC82666476A0092E557 /* AudioList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,7 +444,9 @@
 				CA47E23B266611DA00CA981C /* MapViewController.swift in Sources */,
 				CA4312AD266512BC00861D59 /* AboutUSTableViewCell.swift in Sources */,
 				CABDB4022664D31300E2CC3D /* MuseumCollectionViewCell.swift in Sources */,
+				CABFAAC92666476A0092E557 /* AudioList.swift in Sources */,
 				CA4312B7266514BB00861D59 /* QuizTableViewCell.swift in Sources */,
+				CABFAACC266659330092E557 /* AllAudioBooksViewController.swift in Sources */,
 				CA47E23E2666120D00CA981C /* ProfileViewController.swift in Sources */,
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,

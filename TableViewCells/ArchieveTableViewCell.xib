@@ -68,7 +68,7 @@
             <connections>
                 <outlet property="arcCollectionView" destination="8tS-Yj-fV7" id="06J-oG-s5g"/>
                 <outlet property="archievelbl" destination="99D-nc-ime" id="HD4-sh-rdL"/>
-                <outlet property="viewAll" destination="5Mg-IH-L0C" id="M1L-ZT-yJc"/>
+                <outlet property="viewAll" destination="5Mg-IH-L0C" id="Ozl-7K-OLp"/>
             </connections>
             <point key="canvasLocation" x="-177.536231884058" y="27.790178571428569"/>
         </tableViewCell>
