@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				CA4E88C926638CF400699CB2 /* networkCall.swift */,
-				CA874E1A265FAB8E004FE620 /* CollectionView */,
-				CA874E0E265FA828004FE620 /* TableViewcells */,
+				CA874E1A265FAB8E004FE620 /* CollectionViewCells */,
+				CA874E0E265FA828004FE620 /* TableViewCells */,
 				CA26B712265EB6B600115C47 /* apiTest */,
 				CA26B711265EB6B600115C47 /* Products */,
 				01A6AE8ACE6F0698F27D0B0C /* Pods */,
@@ -163,7 +163,7 @@
 			path = apiTest;
 			sourceTree = "<group>";
 		};
-		CA874E0E265FA828004FE620 /* TableViewcells */ = {
+		CA874E0E265FA828004FE620 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				CA874E15265FAB32004FE620 /* TableViewCell.swift */,
@@ -185,10 +185,10 @@
 				CA4312BA2665154600861D59 /* GalleryTableViewCell.swift */,
 				CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */,
 			);
-			path = TableViewcells;
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		CA874E1A265FAB8E004FE620 /* CollectionView */ = {
+		CA874E1A265FAB8E004FE620 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */,
@@ -206,7 +206,7 @@
 				CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */,
 				CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */,
 			);
-			path = CollectionView;
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

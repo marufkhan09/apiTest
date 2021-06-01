@@ -128,38 +128,46 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if i == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ArchieveTableViewCell", for: indexPath) as! ArchieveTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 0.5045802183)
             return cell
         }
         if i == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MuseumTableViewCell", for: indexPath) as! MuseumTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9882352941, blue: 0.9607843137, alpha: 0.5)
             return cell
         }
         if i == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "EventsTableViewCell", for: indexPath) as! EventsTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 0.5045802183)
             return cell
         }
         if i == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NoticeTableViewCell", for: indexPath) as! NoticeTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9882352941, blue: 0.9607843137, alpha: 0.5)
             return cell
         }
         
         if i == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TourTableViewCell", for: indexPath) as! TourTableViewCell
+            
             return cell
         }
         
         if i == 6 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AboutUSTableViewCell", for: indexPath) as! AboutUSTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 0.5045802183)
             return cell
         }
         
         if i == 7 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuizTableViewCell", for: indexPath) as! QuizTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 1)
             return cell
         }
         
         if i == 8 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "GalleryTableViewCell", for: indexPath) as! GalleryTableViewCell
+            cell.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9882352941, blue: 0.9607843137, alpha: 0.5)
             return cell
         }
 
