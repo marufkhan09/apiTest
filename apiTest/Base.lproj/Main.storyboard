@@ -34,6 +34,11 @@
                                     <outlet property="delegate" destination="Qqp-eG-PbM" id="ixy-v7-cu9"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-Cs-A3v">
+                                <rect key="frame" x="299" y="680" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v7P-WT-lhP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,7 +71,7 @@
                         <segue destination="ThD-VO-VM4" kind="relationship" relationship="viewControllers" id="sN5-1M-kgc"/>
                         <segue destination="YpL-Me-eRY" kind="relationship" relationship="viewControllers" id="L76-cg-Qrw"/>
                         <segue destination="5Uv-MJ-smh" kind="relationship" relationship="viewControllers" id="OmJ-jX-kxK"/>
-                        <segue destination="5Uv-MJ-smh" kind="relationship" relationship="viewControllers" id="vKk-Xm-Ns2"/>
+                        <segue destination="yZA-X2-7jx" kind="relationship" relationship="viewControllers" id="WQ5-dh-w0u"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1w-IT-ukS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,7 +81,7 @@
         <!--Item-->
         <scene sceneID="aXi-cw-4wH">
             <objects>
-                <viewController id="YpL-Me-eRY" sceneMemberID="viewController">
+                <viewController id="YpL-Me-eRY" customClass="MapViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SfH-ii-9jS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,11 +94,13 @@
             </objects>
             <point key="canvasLocation" x="-1277" y="519"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="eXA-k9-9Ce">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ThD-VO-VM4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SAV-ml-poY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Icon feather-home" landscapeImage="Icon feather-home" largeContentSizeImage="Icon feather-home" selectedImage="Icon feather-home" id="SAV-ml-poY">
+                        <color key="badgeColor" red="0.070588235294117646" green="0.72156862745098038" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rvh-td-euC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -111,7 +118,7 @@
         <!--Item-->
         <scene sceneID="O67-6q-3kj">
             <objects>
-                <viewController id="5Uv-MJ-smh" sceneMemberID="viewController">
+                <viewController id="5Uv-MJ-smh" customClass="ProfileViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CjA-eT-fZv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,26 +131,25 @@
             </objects>
             <point key="canvasLocation" x="-420" y="519"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="XDE-mv-GTv">
+        <!--Item-->
+        <scene sceneID="VMO-Sn-ZyB">
             <objects>
-                <viewController id="sNs-GD-Huk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HYG-aR-Iha">
+                <viewController id="yZA-X2-7jx" customClass="MoreViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbp-Qt-iOJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="0Nl-I0-yOm"/>
+                        <viewLayoutGuide key="safeArea" id="cqF-B0-ueV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zFI-qK-dXi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AMJ-zR-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4K-cW-nTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541" y="519"/>
+            <point key="canvasLocation" x="433" y="519"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="OmJ-jX-kxK"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="Icon feather-home" width="15" height="16.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

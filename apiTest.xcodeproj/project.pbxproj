@@ -27,6 +27,9 @@
 		CA4312BD2665154600861D59 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */; };
 		CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */; };
 		CA4312C22665155B00861D59 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */; };
+		CA47E23B266611DA00CA981C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47E23A266611DA00CA981C /* MapViewController.swift */; };
+		CA47E23E2666120D00CA981C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47E23D2666120D00CA981C /* ProfileViewController.swift */; };
+		CA47E2412666122E00CA981C /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47E2402666122E00CA981C /* MoreViewController.swift */; };
 		CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */; };
 		CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */; };
 		CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C926638CF400699CB2 /* networkCall.swift */; };
@@ -75,6 +78,9 @@
 		CA4312BB2665154600861D59 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
 		CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		CA47E23A266611DA00CA981C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CA47E23D2666120D00CA981C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CA47E2402666122E00CA981C /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveTableViewCell.swift; sourceTree = "<group>"; };
 		CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveTableViewCell.xib; sourceTree = "<group>"; };
 		CA4E88C926638CF400699CB2 /* networkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkCall.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		CA26B707265EB6B600115C47 = {
 			isa = PBXGroup;
 			children = (
+				CA47E239266611A600CA981C /* Controllers */,
 				CA4E88C926638CF400699CB2 /* networkCall.swift */,
 				CA874E1A265FAB8E004FE620 /* CollectionViewCells */,
 				CA874E0E265FA828004FE620 /* TableViewCells */,
@@ -153,7 +160,6 @@
 			children = (
 				CA26B713265EB6B600115C47 /* AppDelegate.swift */,
 				CA26B715265EB6B600115C47 /* SceneDelegate.swift */,
-				CA26B717265EB6B600115C47 /* HomeViewController.swift */,
 				CA26B719265EB6B600115C47 /* Main.storyboard */,
 				CA26B71C265EB6B800115C47 /* Assets.xcassets */,
 				CA26B71E265EB6B800115C47 /* LaunchScreen.storyboard */,
@@ -161,6 +167,17 @@
 				CA26B728265EB6E800115C47 /* ResponseData.swift */,
 			);
 			path = apiTest;
+			sourceTree = "<group>";
+		};
+		CA47E239266611A600CA981C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA26B717265EB6B600115C47 /* HomeViewController.swift */,
+				CA47E23A266611DA00CA981C /* MapViewController.swift */,
+				CA47E23D2666120D00CA981C /* ProfileViewController.swift */,
+				CA47E2402666122E00CA981C /* MoreViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CA874E0E265FA828004FE620 /* TableViewCells */ = {
@@ -350,14 +367,17 @@
 				CA4312BC2665154600861D59 /* GalleryTableViewCell.swift in Sources */,
 				CAFB7EFD266136DB00F744E2 /* ArchieveCollectionViewCell.swift in Sources */,
 				CABDB423266502D800E2CC3D /* NoticeTableViewCell.swift in Sources */,
+				CA47E23B266611DA00CA981C /* MapViewController.swift in Sources */,
 				CA4312AD266512BC00861D59 /* AboutUSTableViewCell.swift in Sources */,
 				CABDB4022664D31300E2CC3D /* MuseumCollectionViewCell.swift in Sources */,
 				CA4312B7266514BB00861D59 /* QuizTableViewCell.swift in Sources */,
+				CA47E23E2666120D00CA981C /* ProfileViewController.swift in Sources */,
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,
 				CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */,
 				CABDB41A2664FE7B00E2CC3D /* NoticeCollectionViewCell.swift in Sources */,
 				CABDB40B2664D35600E2CC3D /* MuseumTableViewCell.swift in Sources */,
+				CA47E2412666122E00CA981C /* MoreViewController.swift in Sources */,
 				CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */,
 				CA4312A726650E8F00861D59 /* TourTableViewCell.swift in Sources */,
 			);
