@@ -13,12 +13,6 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
     var image_link = ""
     var jsonArray = [ResponseDatum]()
     var bannersCount: Int = 0
-    var archivecount: Int = 0
-    var museumcount: Int = 0
-    var eventscount: Int = 0
-    var noticecount: Int = 0
-    var aboutcount: Int = 0
-    var gallerycount: Int = 0
     
     
     @IBOutlet var collectionView: UICollectionView!
@@ -30,18 +24,7 @@ class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
             self.collectionView.reloadData()
             self.bannersCount = self.jsonArray[0].banners!.count
             //print("banner:\(self.bannersCount)")
-            self.archivecount = self.jsonArray[1].archieves!.count
-            //print("archive:\(self.archivecount)")
-            self.museumcount = self.jsonArray[2].museum_blogs!.count
-            //print("museum:\(self.museumcount)")
-            self.eventscount = self.jsonArray[3].events!.count
-            //print("event:\(self.eventscount)")
-            self.noticecount = self.jsonArray[4].notices!.count
-            //print("notice:\(self.noticecount)")
-            self.aboutcount = self.jsonArray[5].about_us!.count
-            //print("about:\(self.aboutcount)")
-            self.gallerycount = self.jsonArray[6].galleries!.count
-            //print("gal:\(self.gallerycount)")
+
         }
 //        networkCall().getData(from: url) {
 //

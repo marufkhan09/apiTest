@@ -33,6 +33,17 @@
 		CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */; };
 		CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */; };
 		CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C926638CF400699CB2 /* networkCall.swift */; };
+		CA6F68F22666286E00211F4F /* LatoSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E72666286E00211F4F /* LatoSemibold.ttf */; };
+		CA6F68F32666286E00211F4F /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E82666286E00211F4F /* Lato-Italic.ttf */; };
+		CA6F68F42666286E00211F4F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E92666286E00211F4F /* Lato-Light.ttf */; };
+		CA6F68F52666286E00211F4F /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68EA2666286E00211F4F /* Lato-LightItalic.ttf */; };
+		CA6F68F62666286E00211F4F /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68EB2666286E00211F4F /* Lato-BlackItalic.ttf */; };
+		CA6F68F72666286E00211F4F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68EC2666286E00211F4F /* Lato-Bold.ttf */; };
+		CA6F68F82666286E00211F4F /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68ED2666286E00211F4F /* Lato-Black.ttf */; };
+		CA6F68F92666286E00211F4F /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68EE2666286E00211F4F /* Lato-BoldItalic.ttf */; };
+		CA6F68FA2666286E00211F4F /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68EF2666286E00211F4F /* Lato-ThinItalic.ttf */; };
+		CA6F68FB2666286E00211F4F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68F02666286E00211F4F /* Lato-Regular.ttf */; };
+		CA6F68FC2666286E00211F4F /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68F12666286E00211F4F /* Lato-Thin.ttf */; };
 		CA874E17265FAB32004FE620 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA874E15265FAB32004FE620 /* TableViewCell.swift */; };
 		CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA874E16265FAB32004FE620 /* TableViewCell.xib */; };
 		CA874E1D265FABC7004FE620 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */; };
@@ -84,6 +95,17 @@
 		CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveTableViewCell.swift; sourceTree = "<group>"; };
 		CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveTableViewCell.xib; sourceTree = "<group>"; };
 		CA4E88C926638CF400699CB2 /* networkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkCall.swift; sourceTree = "<group>"; };
+		CA6F68E72666286E00211F4F /* LatoSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LatoSemibold.ttf; path = ../../../../Downloads/Lato/LatoSemibold.ttf; sourceTree = "<group>"; };
+		CA6F68E82666286E00211F4F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../Downloads/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		CA6F68E92666286E00211F4F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../Downloads/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		CA6F68EA2666286E00211F4F /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../../../Downloads/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		CA6F68EB2666286E00211F4F /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../../../Downloads/Lato/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CA6F68EC2666286E00211F4F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../Downloads/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		CA6F68ED2666286E00211F4F /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../../Downloads/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		CA6F68EE2666286E00211F4F /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../../../Downloads/Lato/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CA6F68EF2666286E00211F4F /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "../../../../Downloads/Lato/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CA6F68F02666286E00211F4F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../Downloads/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		CA6F68F12666286E00211F4F /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../../../../Downloads/Lato/Lato-Thin.ttf"; sourceTree = "<group>"; };
 		CA874E15265FAB32004FE620 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CA874E16265FAB32004FE620 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,8 +158,10 @@
 		CA26B707265EB6B600115C47 = {
 			isa = PBXGroup;
 			children = (
+				CA6F68E62666283500211F4F /* Fonts */,
+				CA6F68E4266622FA00211F4F /* Model */,
+				CA6F68E3266622D500211F4F /* Services */,
 				CA47E239266611A600CA981C /* Controllers */,
-				CA4E88C926638CF400699CB2 /* networkCall.swift */,
 				CA874E1A265FAB8E004FE620 /* CollectionViewCells */,
 				CA874E0E265FA828004FE620 /* TableViewCells */,
 				CA26B712265EB6B600115C47 /* apiTest */,
@@ -164,7 +188,6 @@
 				CA26B71C265EB6B800115C47 /* Assets.xcassets */,
 				CA26B71E265EB6B800115C47 /* LaunchScreen.storyboard */,
 				CA26B721265EB6B800115C47 /* Info.plist */,
-				CA26B728265EB6E800115C47 /* ResponseData.swift */,
 			);
 			path = apiTest;
 			sourceTree = "<group>";
@@ -178,6 +201,40 @@
 				CA47E2402666122E00CA981C /* MoreViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA6F68E3266622D500211F4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E88C926638CF400699CB2 /* networkCall.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA6F68E4266622FA00211F4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA26B728265EB6E800115C47 /* ResponseData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA6F68E62666283500211F4F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA6F68ED2666286E00211F4F /* Lato-Black.ttf */,
+				CA6F68EB2666286E00211F4F /* Lato-BlackItalic.ttf */,
+				CA6F68EC2666286E00211F4F /* Lato-Bold.ttf */,
+				CA6F68EE2666286E00211F4F /* Lato-BoldItalic.ttf */,
+				CA6F68E82666286E00211F4F /* Lato-Italic.ttf */,
+				CA6F68E92666286E00211F4F /* Lato-Light.ttf */,
+				CA6F68EA2666286E00211F4F /* Lato-LightItalic.ttf */,
+				CA6F68F02666286E00211F4F /* Lato-Regular.ttf */,
+				CA6F68F12666286E00211F4F /* Lato-Thin.ttf */,
+				CA6F68EF2666286E00211F4F /* Lato-ThinItalic.ttf */,
+				CA6F68E72666286E00211F4F /* LatoSemibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CA874E0E265FA828004FE620 /* TableViewCells */ = {
@@ -286,12 +343,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4312C22665155B00861D59 /* GalleryCollectionViewCell.xib in Resources */,
+				CA6F68FA2666286E00211F4F /* Lato-ThinItalic.ttf in Resources */,
+				CA6F68F32666286E00211F4F /* Lato-Italic.ttf in Resources */,
 				CA4312B8266514BB00861D59 /* QuizTableViewCell.xib in Resources */,
+				CA6F68F42666286E00211F4F /* Lato-Light.ttf in Resources */,
 				CABDB4162664EED200E2CC3D /* EventsTableViewCell.xib in Resources */,
+				CA6F68F22666286E00211F4F /* LatoSemibold.ttf in Resources */,
+				CA6F68FC2666286E00211F4F /* Lato-Thin.ttf in Resources */,
 				CABDB4032664D31300E2CC3D /* MuseumCollectionViewCell.xib in Resources */,
 				CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */,
+				CA6F68F62666286E00211F4F /* Lato-BlackItalic.ttf in Resources */,
 				CA4312BD2665154600861D59 /* GalleryTableViewCell.xib in Resources */,
+				CA6F68F82666286E00211F4F /* Lato-Black.ttf in Resources */,
 				CA26B720265EB6B800115C47 /* LaunchScreen.storyboard in Resources */,
+				CA6F68F92666286E00211F4F /* Lato-BoldItalic.ttf in Resources */,
+				CA6F68F72666286E00211F4F /* Lato-Bold.ttf in Resources */,
 				CABDB41B2664FE7B00E2CC3D /* NoticeCollectionViewCell.xib in Resources */,
 				CABDB4112664EEB600E2CC3D /* EventsCollectionViewCell.xib in Resources */,
 				CABDB424266502D800E2CC3D /* NoticeTableViewCell.xib in Resources */,
@@ -299,8 +365,10 @@
 				CA4312B3266512D500861D59 /* AboutUSCollectionViewCell.xib in Resources */,
 				CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */,
 				CA26B71D265EB6B800115C47 /* Assets.xcassets in Resources */,
+				CA6F68FB2666286E00211F4F /* Lato-Regular.ttf in Resources */,
 				CAFB7EFE266136DB00F744E2 /* ArchieveCollectionViewCell.xib in Resources */,
 				CABDB40C2664D35600E2CC3D /* MuseumTableViewCell.xib in Resources */,
+				CA6F68F52666286E00211F4F /* Lato-LightItalic.ttf in Resources */,
 				CA4312A826650E8F00861D59 /* TourTableViewCell.xib in Resources */,
 				CA26B71B265EB6B600115C47 /* Main.storyboard in Resources */,
 				CA874E1E265FABC7004FE620 /* BannerCollectionViewCell.xib in Resources */,
