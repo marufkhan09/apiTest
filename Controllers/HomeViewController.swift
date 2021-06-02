@@ -40,7 +40,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //print("gal:\(self.gallerycount)")
         }
         
-        
         tableView.register(UINib.init(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TVCell")
         tableView.register(UINib.init(nibName: "ArchieveTableViewCell", bundle: nil), forCellReuseIdentifier: "ArchieveTableViewCell")
         tableView.register(UINib.init(nibName: "MuseumTableViewCell", bundle: nil), forCellReuseIdentifier: "MuseumTableViewCell")
@@ -194,9 +193,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
-    
 
-    
-    
 }
 
