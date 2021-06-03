@@ -37,9 +37,6 @@ class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return jsonArray.count
     }
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AudioBookCollectionViewCell", for: indexPath) as! AudioBookCollectionViewCell
@@ -60,6 +57,8 @@ class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, U
         
         return cell
     }
+    
+    
     
     func getData(from url : String, completed: @escaping ()-> ()) {
         

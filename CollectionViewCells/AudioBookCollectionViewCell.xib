@@ -40,7 +40,7 @@
                             <constraint firstAttribute="width" constant="136" id="9GM-xk-Gr6"/>
                             <constraint firstAttribute="height" constant="49" id="Mbs-fB-C53"/>
                         </constraints>
-                        <mutableString key="text">A man fights with his heart, as hardly can guns liberate him from anything. Tariq Ali has been part of a group of artistes who visited refugee camps across the borders and training camps for freedom fighters in 1971. They sang to fighters patriotic songs to keep their morale high and to bring solace and smiles to the refugees. Most importantly what they did is that they kept the dream of independence alive and reached out to refugees to listen to their odyssey of horror. He reveals how songs had turned into one of the greatest weapons during the Liberation War of Bangladesh.</mutableString>
+                        <string key="text">A man fights with his heart, as hardly can guns liberate him from anything. Tariq Ali has been part of a group of artistes who visited refugee camps across the borders and training camps for freedom fighters in 1971. They sang to fighters patriotic songs to keep their morale high and to bring solace and smiles to the refugees. Most importantly what they did is that they kept the dream of independence alive and reached out to refugees to listen to their odyssey of horror. He reveals how songs had turned into one of the greatest weapons during the Liberation War of Bangladesh.</string>
                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

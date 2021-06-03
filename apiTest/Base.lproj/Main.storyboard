@@ -71,21 +71,20 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-HO-4ni">
                                 <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="Ulg-ez-tqp">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="300" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Ulg-ez-tqp">
                                     <size key="itemSize" width="157" height="309"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="skX-IX-4mn">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="So4-Ul-DMv">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="309"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zow-WE-2H2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iSY-jj-v9p">
                                             <rect key="frame" x="0.0" y="0.0" width="157" height="309"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="157" height="309"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -97,10 +96,10 @@
                         <viewLayoutGuide key="safeArea" id="2mJ-Yg-jOr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="o1g-HO-4ni" firstAttribute="leading" secondItem="2mJ-Yg-jOr" secondAttribute="leading" id="8qP-el-Lhm"/>
-                            <constraint firstItem="2mJ-Yg-jOr" firstAttribute="bottom" secondItem="o1g-HO-4ni" secondAttribute="bottom" id="Ieb-kQ-N8g"/>
-                            <constraint firstItem="o1g-HO-4ni" firstAttribute="top" secondItem="2mJ-Yg-jOr" secondAttribute="top" id="pai-ku-1wd"/>
-                            <constraint firstItem="2mJ-Yg-jOr" firstAttribute="trailing" secondItem="o1g-HO-4ni" secondAttribute="trailing" id="wdD-Qj-BCK"/>
+                            <constraint firstItem="o1g-HO-4ni" firstAttribute="trailing" secondItem="2mJ-Yg-jOr" secondAttribute="trailing" id="mgT-kh-78i"/>
+                            <constraint firstItem="o1g-HO-4ni" firstAttribute="bottom" secondItem="2mJ-Yg-jOr" secondAttribute="bottom" id="omW-0R-Dcz"/>
+                            <constraint firstItem="o1g-HO-4ni" firstAttribute="top" secondItem="2mJ-Yg-jOr" secondAttribute="top" id="r7f-p4-dh9"/>
+                            <constraint firstItem="o1g-HO-4ni" firstAttribute="leading" secondItem="2mJ-Yg-jOr" secondAttribute="leading" id="vTb-3c-JCv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KfE-7Y-AgE"/>
