@@ -11,13 +11,13 @@ import Foundation
 struct AudioList: Codable {
     let id: Int
     let title, description: String
-    let imageLink, audioLink: String?
+    let image_link, audio_link: String?
 
     enum CodingKeys: String, CodingKey {
         case id, title
         case description
-        case imageLink
-        case audioLink
+        case image_link
+        case audio_link
     }
 }
 

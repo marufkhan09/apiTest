@@ -62,8 +62,8 @@
 		CABDB424266502D800E2CC3D /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABDB422266502D800E2CC3D /* NoticeTableViewCell.xib */; };
 		CABFAAC92666476A0092E557 /* AudioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABFAAC82666476A0092E557 /* AudioList.swift */; };
 		CABFAACC266659330092E557 /* AllAudioBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */; };
-		CAC3B0192667762500091C64 /* AllAudioBooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3B0172667762500091C64 /* AllAudioBooksCollectionViewCell.swift */; };
-		CAC3B01A2667762500091C64 /* AllAudioBooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC3B0182667762500091C64 /* AllAudioBooksCollectionViewCell.xib */; };
+		CAF66227266981D00087EAF7 /* AudioBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF66225266981D00087EAF7 /* AudioBookCollectionViewCell.swift */; };
+		CAF66228266981D00087EAF7 /* AudioBookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF66226266981D00087EAF7 /* AudioBookCollectionViewCell.xib */; };
 		CAFB7EFD266136DB00F744E2 /* ArchieveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB7EFB266136DB00F744E2 /* ArchieveCollectionViewCell.swift */; };
 		CAFB7EFE266136DB00F744E2 /* ArchieveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFB7EFC266136DB00F744E2 /* ArchieveCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -128,8 +128,8 @@
 		CABDB422266502D800E2CC3D /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
 		CABFAAC82666476A0092E557 /* AudioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioList.swift; sourceTree = "<group>"; };
 		CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAudioBooksViewController.swift; sourceTree = "<group>"; };
-		CAC3B0172667762500091C64 /* AllAudioBooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAudioBooksCollectionViewCell.swift; sourceTree = "<group>"; };
-		CAC3B0182667762500091C64 /* AllAudioBooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAudioBooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAF66225266981D00087EAF7 /* AudioBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAF66226266981D00087EAF7 /* AudioBookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioBookCollectionViewCell.xib; sourceTree = "<group>"; };
 		CAFB7EFB266136DB00F744E2 /* ArchieveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAFB7EFC266136DB00F744E2 /* ArchieveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -289,8 +289,8 @@
 				CA4312B1266512D500861D59 /* AboutUSCollectionViewCell.xib */,
 				CA4312BF2665155B00861D59 /* GalleryCollectionViewCell.swift */,
 				CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */,
-				CAC3B0172667762500091C64 /* AllAudioBooksCollectionViewCell.swift */,
-				CAC3B0182667762500091C64 /* AllAudioBooksCollectionViewCell.xib */,
+				CAF66225266981D00087EAF7 /* AudioBookCollectionViewCell.swift */,
+				CAF66226266981D00087EAF7 /* AudioBookCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -367,13 +367,13 @@
 				CA6F68F62666286E00211F4F /* Lato-BlackItalic.ttf in Resources */,
 				CA4312BD2665154600861D59 /* GalleryTableViewCell.xib in Resources */,
 				CA6F68F82666286E00211F4F /* Lato-Black.ttf in Resources */,
-				CAC3B01A2667762500091C64 /* AllAudioBooksCollectionViewCell.xib in Resources */,
 				CA26B720265EB6B800115C47 /* LaunchScreen.storyboard in Resources */,
 				CA6F68F92666286E00211F4F /* Lato-BoldItalic.ttf in Resources */,
 				CA6F68F72666286E00211F4F /* Lato-Bold.ttf in Resources */,
 				CABDB41B2664FE7B00E2CC3D /* NoticeCollectionViewCell.xib in Resources */,
 				CABDB4112664EEB600E2CC3D /* EventsCollectionViewCell.xib in Resources */,
 				CABDB424266502D800E2CC3D /* NoticeTableViewCell.xib in Resources */,
+				CAF66228266981D00087EAF7 /* AudioBookCollectionViewCell.xib in Resources */,
 				CA4312AE266512BC00861D59 /* AboutUSTableViewCell.xib in Resources */,
 				CA4312B3266512D500861D59 /* AboutUSCollectionViewCell.xib in Resources */,
 				CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */,
@@ -456,11 +456,11 @@
 				CABFAACC266659330092E557 /* AllAudioBooksViewController.swift in Sources */,
 				CA47E23E2666120D00CA981C /* ProfileViewController.swift in Sources */,
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
-				CAC3B0192667762500091C64 /* AllAudioBooksCollectionViewCell.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,
 				CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */,
 				CABDB41A2664FE7B00E2CC3D /* NoticeCollectionViewCell.swift in Sources */,
 				CABDB40B2664D35600E2CC3D /* MuseumTableViewCell.swift in Sources */,
+				CAF66227266981D00087EAF7 /* AudioBookCollectionViewCell.swift in Sources */,
 				CA47E2412666122E00CA981C /* MoreViewController.swift in Sources */,
 				CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */,
 				CA4312A726650E8F00861D59 /* TourTableViewCell.swift in Sources */,
