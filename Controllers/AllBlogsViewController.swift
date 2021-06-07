@@ -1,32 +1,30 @@
 //
-//  AllAudioBooksViewController.swift
+//  AllBlogsViewController.swift
 //  apiTest
 //
-//  Created by Maruf Khan on 1/6/21.
+//  Created by Maruf Khan on 7/6/21.
 //
 
 import UIKit
 import Alamofire
-class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    
-    
+class AllBlogsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet var collectionView: UICollectionView!
-    var jsonArray = [AudioList]()
-    var audioCount = 0
+    
+    var jsonArray = [MuseumBlog]()
+    var blogCount = 0
     var image_link = ""
-    let audio_url  = "\(base_url)"+"api/v1/audio_books/list"
+    let blog_url  = "\(base_url)"+"api/v1/museum_blogs/list"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.reloadData()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.register(UINib.init(nibName: "AudioBookCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AudioBookCollectionViewCell")
+        self.collectionView.register(UINib.init(nibName: "AllBlogsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AllBlogsCollectionViewCell")
         
-        getData(from: audio_url) {
+        getData(from: blog_url) {
             self.collectionView.reloadData()
-            self.audioCount = self.jsonArray.count
+            self.blogCount = self.jsonArray.count
             
         }
         
@@ -35,16 +33,17 @@ class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, U
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(jsonArray.count)
         return jsonArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AudioBookCollectionViewCell", for: indexPath) as! AudioBookCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AllBlogsCollectionViewCell", for: indexPath) as! AllBlogsCollectionViewCell
         let i = indexPath.row
-        
-        cell.titleName.text = jsonArray[i].title
-        cell.audioDesc.text = jsonArray[i].description
-        image_link = jsonArray[i].image_link ?? ""
+
+        cell.date.text = jsonArray[i].published_date
+        cell.titleDesc.text = jsonArray[i].description
+        image_link = jsonArray[i].image_link
         cell.imageView.downloaded(from: image_link)
         
         if i == 0 || i % 2 == 0 {
@@ -62,13 +61,13 @@ class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, U
     
     func getData(from url : String, completed: @escaping ()-> ()) {
         
-        AF.request(audio_url, method: .get,encoding: JSONEncoding.default).responseJSON { (response) in
+        AF.request(blog_url, method: .get,encoding: JSONEncoding.default).responseJSON { (response) in
             guard let data = response.data
             else{
                 return
             }
             do{
-                self.jsonArray = try JSONDecoder().decode([AudioList].self, from: data)
+                self.jsonArray = try JSONDecoder().decode([MuseumBlog].self, from: data)
                 DispatchQueue.main.async {
                     completed()
                 }
@@ -82,6 +81,6 @@ class AllAudioBooksViewController: UIViewController, UICollectionViewDelegate, U
         }.resume()
         
     }
-    
-    
+
+
 }

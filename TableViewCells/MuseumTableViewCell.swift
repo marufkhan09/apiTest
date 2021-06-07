@@ -10,6 +10,7 @@ import Alamofire
 class MuseumTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout  {
 
     
+    @IBOutlet var viewAll: UIButton!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var mBlogCollectionView: UICollectionView!
     

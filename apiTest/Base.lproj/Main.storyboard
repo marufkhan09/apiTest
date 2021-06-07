@@ -54,11 +54,13 @@
                     <connections>
                         <outlet property="tableView" destination="tae-zE-dqe" id="6Ez-jA-VXy"/>
                         <segue destination="Q5c-6u-xOM" kind="show" identifier="allAudio" id="Ljv-XE-w15"/>
+                        <segue destination="bvd-DA-DFe" kind="show" identifier="audiodetail" id="O4K-6l-c3i"/>
+                        <segue destination="S4l-5R-VzH" kind="show" identifier="allBlogs" id="jSX-ZC-hxW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khk-s4-OEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2329.2307692307691" y="-279.38388625592415"/>
+            <point key="canvasLocation" x="2225" y="-279"/>
         </scene>
         <!--All Audio Books View Controller-->
         <scene sceneID="irB-Z0-R0x">
@@ -68,7 +70,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-HO-4ni">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-HO-4ni">
                                 <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="300" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Ulg-ez-tqp">
@@ -181,6 +183,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6G-RF-qG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="489.85507246376818" y="-279.24107142857139"/>
+        </scene>
+        <!--All Blogs View Controller-->
+        <scene sceneID="H05-7j-chp">
+            <objects>
+                <viewController id="S4l-5R-VzH" customClass="AllBlogsViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vdI-A8-e9a">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sxL-0b-P0R">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yGy-Th-hcO">
+                                    <size key="itemSize" width="249" height="143"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="fIr-PY-31N">
+                                        <rect key="frame" x="27.666666666666668" y="0.0" width="335" height="363"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PSr-DW-ftd">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="363"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="335" height="363"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="S4l-5R-VzH" id="V4v-nd-2AR"/>
+                                    <outlet property="delegate" destination="S4l-5R-VzH" id="LTB-Cy-f4y"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BCd-Z3-JJl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sxL-0b-P0R" firstAttribute="top" secondItem="BCd-Z3-JJl" secondAttribute="top" id="Ef0-60-9dF"/>
+                            <constraint firstItem="sxL-0b-P0R" firstAttribute="leading" secondItem="BCd-Z3-JJl" secondAttribute="leading" id="PSu-Bz-HRg"/>
+                            <constraint firstItem="BCd-Z3-JJl" firstAttribute="trailing" secondItem="sxL-0b-P0R" secondAttribute="trailing" id="dSs-gF-QNl"/>
+                            <constraint firstItem="BCd-Z3-JJl" firstAttribute="bottom" secondItem="sxL-0b-P0R" secondAttribute="bottom" id="gZE-Vw-5sg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sl8-41-neB"/>
+                    <connections>
+                        <outlet property="collectionView" destination="sxL-0b-P0R" id="rLx-qt-xqe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIF-Hb-fsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3127.6923076923076" y="-1609.4786729857819"/>
+        </scene>
+        <!--Audio Detail View Controller-->
+        <scene sceneID="x2G-XX-e3p">
+            <objects>
+                <viewController id="bvd-DA-DFe" customClass="AudioDetailViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APy-0j-ja9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JRG-dN-yxU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XS7-ch-v69"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypP-5e-RTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3129" y="-943"/>
         </scene>
         <!--Home-->
         <scene sceneID="g07-et-wer">

@@ -73,6 +73,7 @@
             <connections>
                 <outlet property="mBlogCollectionView" destination="tIz-2k-8OQ" id="VQD-V2-Yff"/>
                 <outlet property="titleLabel" destination="RN1-wR-0Az" id="7by-tX-Fnn"/>
+                <outlet property="viewAll" destination="pqX-bl-Dbo" id="wUa-6N-T7q"/>
             </connections>
             <point key="canvasLocation" x="78.985507246376812" y="41.517857142857139"/>
         </tableViewCell>

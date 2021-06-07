@@ -124,11 +124,9 @@ class ArchieveTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         cell.titleDesc.text = jsonArray[1].archieves![i].title
         video_link = jsonArray[1].archieves![i].video_url
         cell.vidImage.image = getThumbnailImage(forUrl:URL(string: video_link)!)
+        
 
         return cell
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-    
+
 }

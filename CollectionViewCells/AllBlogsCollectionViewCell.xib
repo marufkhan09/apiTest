@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="LatoSemibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AllBlogsCollectionViewCell" id="gTV-IL-0wX" customClass="AllBlogsCollectionViewCell" customModule="apiTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="363"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="363"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58Z-f9-giQ">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="168"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="335" id="aNj-AO-386"/>
+                            <constraint firstAttribute="height" constant="168" id="xqa-Xo-Kf1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="098-Bz-3B6">
+                        <rect key="frame" x="21" y="188" width="294" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="294" id="1ql-Am-fjV"/>
+                            <constraint firstAttribute="height" constant="43" id="bd1-4y-HQ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vib-aK-1ak">
+                        <rect key="frame" x="21" y="252" width="98" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="FG2-6v-Yed"/>
+                            <constraint firstAttribute="height" constant="12" id="Xkb-N0-LPa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-Tm-MLt">
+                        <rect key="frame" x="21" y="274" width="155" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="155" id="Gdl-KM-qrQ"/>
+                            <constraint firstAttribute="height" constant="12" id="nrd-2D-h4P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-qh-Wke">
+                        <rect key="frame" x="20" y="307" width="295" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="9wD-aE-j9s"/>
+                            <constraint firstAttribute="width" constant="295" id="Gcd-oB-4NT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="Read More">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Wbk-qh-Wke" firstAttribute="top" secondItem="T8a-Tm-MLt" secondAttribute="bottom" constant="21" id="Aaz-rQ-60G"/>
+                <constraint firstItem="Vib-aK-1ak" firstAttribute="leading" secondItem="098-Bz-3B6" secondAttribute="leading" id="E27-Sc-ffP"/>
+                <constraint firstItem="098-Bz-3B6" firstAttribute="top" secondItem="58Z-f9-giQ" secondAttribute="bottom" constant="20" id="FMK-SZ-huy"/>
+                <constraint firstItem="T8a-Tm-MLt" firstAttribute="leading" secondItem="Vib-aK-1ak" secondAttribute="leading" id="Lz1-26-PXZ"/>
+                <constraint firstItem="Vib-aK-1ak" firstAttribute="top" secondItem="098-Bz-3B6" secondAttribute="bottom" constant="21" id="Mz3-Qu-72d"/>
+                <constraint firstItem="T8a-Tm-MLt" firstAttribute="top" secondItem="Vib-aK-1ak" secondAttribute="bottom" constant="10" id="NIJ-kt-B1p"/>
+                <constraint firstAttribute="trailingMargin" secondItem="098-Bz-3B6" secondAttribute="trailing" constant="4" id="QCz-x4-ooi"/>
+                <constraint firstAttribute="trailing" secondItem="58Z-f9-giQ" secondAttribute="trailing" id="j5h-NK-hAR"/>
+                <constraint firstItem="098-Bz-3B6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" constant="5" id="jRS-Yo-7Ir"/>
+                <constraint firstItem="58Z-f9-giQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m4w-v1-Sl7"/>
+                <constraint firstItem="Wbk-qh-Wke" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vyw-6s-g8Y"/>
+                <constraint firstItem="58Z-f9-giQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ypt-4f-sVv"/>
+            </constraints>
+            <connections>
+                <outlet property="date" destination="Vib-aK-1ak" id="aSo-6F-faN"/>
+                <outlet property="imageView" destination="58Z-f9-giQ" id="EKf-VZ-MYj"/>
+                <outlet property="location" destination="T8a-Tm-MLt" id="mrO-Cw-Fz1"/>
+                <outlet property="titleDesc" destination="098-Bz-3B6" id="0OA-gj-4BN"/>
+            </connections>
+            <point key="canvasLocation" x="-1.4492753623188408" y="68.973214285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

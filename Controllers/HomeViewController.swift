@@ -129,13 +129,16 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if i == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ArchieveTableViewCell", for: indexPath) as! ArchieveTableViewCell
+            
             cell.viewAll.tag = i
-            cell.viewAll.addTarget(self, action: #selector(HomeViewController.buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+            cell.viewAll.addTarget(self, action: #selector(HomeViewController.archieveBtn(_:)), for: UIControl.Event.touchUpInside)
             cell.backgroundColor = #colorLiteral(red: 1, green: 0.9591556191, blue: 0.9598774314, alpha: 0.5045802183)
             return cell
         }
         if i == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MuseumTableViewCell", for: indexPath) as! MuseumTableViewCell
+            cell.viewAll.tag = i
+            cell.viewAll.addTarget(self, action: #selector(HomeViewController.museumBtn(_:)), for: UIControl.Event.touchUpInside)
             cell.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9882352941, blue: 0.9607843137, alpha: 0.5)
             return cell
         }
@@ -178,20 +181,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return UITableViewCell()
     }
     
-    @objc func buttonTapped(_ sender:UIButton!){
+    @objc func archieveBtn(_ sender:UIButton!){
         self.performSegue(withIdentifier: "allAudio", sender: sender)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "allAudio") {
-            if let destination = segue.destination as? AllAudioBooksViewController {
-
-               if let button:UIButton = sender as! UIButton? {
-                   print(button.tag) //optional
-                   //destination.valueViaSegue = button.tag
-               }
-            }
-        }
+    @objc func museumBtn(_ sender:UIButton!){
+        self.performSegue(withIdentifier: "allBlogs", sender: sender)
     }
 
 }

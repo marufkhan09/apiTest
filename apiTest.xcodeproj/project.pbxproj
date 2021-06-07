@@ -33,6 +33,7 @@
 		CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */; };
 		CA4E88C72663827600699CB2 /* ArchieveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */; };
 		CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E88C926638CF400699CB2 /* networkCall.swift */; };
+		CA60393D266E4484006DD669 /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60393C266E4484006DD669 /* BlogList.swift */; };
 		CA6F68F22666286E00211F4F /* LatoSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E72666286E00211F4F /* LatoSemibold.ttf */; };
 		CA6F68F32666286E00211F4F /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E82666286E00211F4F /* Lato-Italic.ttf */; };
 		CA6F68F42666286E00211F4F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6F68E92666286E00211F4F /* Lato-Light.ttf */; };
@@ -48,6 +49,10 @@
 		CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA874E16265FAB32004FE620 /* TableViewCell.xib */; };
 		CA874E1D265FABC7004FE620 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */; };
 		CA874E1E265FABC7004FE620 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA874E1C265FABC7004FE620 /* BannerCollectionViewCell.xib */; };
+		CA91DA78266E228F0078A340 /* AudioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91DA77266E228F0078A340 /* AudioDetailViewController.swift */; };
+		CA91DA7B266E34110078A340 /* AllBlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91DA7A266E34110078A340 /* AllBlogsViewController.swift */; };
+		CA91DA85266E34EE0078A340 /* AllBlogsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91DA83266E34EE0078A340 /* AllBlogsCollectionViewCell.swift */; };
+		CA91DA86266E34EE0078A340 /* AllBlogsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA91DA84266E34EE0078A340 /* AllBlogsCollectionViewCell.xib */; };
 		CABDB4022664D31300E2CC3D /* MuseumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABDB4002664D31300E2CC3D /* MuseumCollectionViewCell.swift */; };
 		CABDB4032664D31300E2CC3D /* MuseumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABDB4012664D31300E2CC3D /* MuseumCollectionViewCell.xib */; };
 		CABDB40B2664D35600E2CC3D /* MuseumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABDB4092664D35600E2CC3D /* MuseumTableViewCell.swift */; };
@@ -99,6 +104,7 @@
 		CA4E88C42663827600699CB2 /* ArchieveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveTableViewCell.swift; sourceTree = "<group>"; };
 		CA4E88C52663827600699CB2 /* ArchieveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchieveTableViewCell.xib; sourceTree = "<group>"; };
 		CA4E88C926638CF400699CB2 /* networkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkCall.swift; sourceTree = "<group>"; };
+		CA60393C266E4484006DD669 /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
 		CA6F68E72666286E00211F4F /* LatoSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LatoSemibold.ttf; path = ../../../../Downloads/Lato/LatoSemibold.ttf; sourceTree = "<group>"; };
 		CA6F68E82666286E00211F4F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../Downloads/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		CA6F68E92666286E00211F4F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../Downloads/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
@@ -114,6 +120,10 @@
 		CA874E16265FAB32004FE620 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		CA874E1B265FABC7004FE620 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA874E1C265FABC7004FE620 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		CA91DA77266E228F0078A340 /* AudioDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDetailViewController.swift; sourceTree = "<group>"; };
+		CA91DA7A266E34110078A340 /* AllBlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBlogsViewController.swift; sourceTree = "<group>"; };
+		CA91DA83266E34EE0078A340 /* AllBlogsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBlogsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA91DA84266E34EE0078A340 /* AllBlogsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllBlogsCollectionViewCell.xib; sourceTree = "<group>"; };
 		CABDB4002664D31300E2CC3D /* MuseumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumCollectionViewCell.swift; sourceTree = "<group>"; };
 		CABDB4012664D31300E2CC3D /* MuseumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuseumCollectionViewCell.xib; sourceTree = "<group>"; };
 		CABDB4092664D35600E2CC3D /* MuseumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumTableViewCell.swift; sourceTree = "<group>"; };
@@ -167,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				CA6F68E62666283500211F4F /* Fonts */,
-				CA6F68E4266622FA00211F4F /* Model */,
+				CA6F68E4266622FA00211F4F /* Models */,
 				CA6F68E3266622D500211F4F /* Services */,
 				CA47E239266611A600CA981C /* Controllers */,
 				CA874E1A265FAB8E004FE620 /* CollectionViewCells */,
@@ -208,6 +218,8 @@
 				CA47E23D2666120D00CA981C /* ProfileViewController.swift */,
 				CA47E2402666122E00CA981C /* MoreViewController.swift */,
 				CABFAACB266659330092E557 /* AllAudioBooksViewController.swift */,
+				CA91DA77266E228F0078A340 /* AudioDetailViewController.swift */,
+				CA91DA7A266E34110078A340 /* AllBlogsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,13 +232,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		CA6F68E4266622FA00211F4F /* Model */ = {
+		CA6F68E4266622FA00211F4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CA26B728265EB6E800115C47 /* ResponseData.swift */,
 				CABFAAC82666476A0092E557 /* AudioList.swift */,
+				CA60393C266E4484006DD669 /* BlogList.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CA6F68E62666283500211F4F /* Fonts */ = {
@@ -291,6 +304,8 @@
 				CA4312C02665155B00861D59 /* GalleryCollectionViewCell.xib */,
 				CAF66225266981D00087EAF7 /* AudioBookCollectionViewCell.swift */,
 				CAF66226266981D00087EAF7 /* AudioBookCollectionViewCell.xib */,
+				CA91DA83266E34EE0078A340 /* AllBlogsCollectionViewCell.swift */,
+				CA91DA84266E34EE0078A340 /* AllBlogsCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -378,6 +393,7 @@
 				CA4312B3266512D500861D59 /* AboutUSCollectionViewCell.xib in Resources */,
 				CA874E18265FAB32004FE620 /* TableViewCell.xib in Resources */,
 				CA26B71D265EB6B800115C47 /* Assets.xcassets in Resources */,
+				CA91DA86266E34EE0078A340 /* AllBlogsCollectionViewCell.xib in Resources */,
 				CA6F68FB2666286E00211F4F /* Lato-Regular.ttf in Resources */,
 				CAFB7EFE266136DB00F744E2 /* ArchieveCollectionViewCell.xib in Resources */,
 				CABDB40C2664D35600E2CC3D /* MuseumTableViewCell.xib in Resources */,
@@ -439,6 +455,7 @@
 			files = (
 				CA874E1D265FABC7004FE620 /* BannerCollectionViewCell.swift in Sources */,
 				CA874E17265FAB32004FE620 /* TableViewCell.swift in Sources */,
+				CA91DA85266E34EE0078A340 /* AllBlogsCollectionViewCell.swift in Sources */,
 				CA4312B2266512D500861D59 /* AboutUSCollectionViewCell.swift in Sources */,
 				CABDB4152664EED200E2CC3D /* EventsTableViewCell.swift in Sources */,
 				CA4E88C62663827600699CB2 /* ArchieveTableViewCell.swift in Sources */,
@@ -458,12 +475,15 @@
 				CA26B729265EB6E800115C47 /* ResponseData.swift in Sources */,
 				CA26B716265EB6B600115C47 /* SceneDelegate.swift in Sources */,
 				CA4E88CA26638CF400699CB2 /* networkCall.swift in Sources */,
+				CA60393D266E4484006DD669 /* BlogList.swift in Sources */,
 				CABDB41A2664FE7B00E2CC3D /* NoticeCollectionViewCell.swift in Sources */,
 				CABDB40B2664D35600E2CC3D /* MuseumTableViewCell.swift in Sources */,
 				CAF66227266981D00087EAF7 /* AudioBookCollectionViewCell.swift in Sources */,
 				CA47E2412666122E00CA981C /* MoreViewController.swift in Sources */,
 				CA4312C12665155B00861D59 /* GalleryCollectionViewCell.swift in Sources */,
+				CA91DA78266E228F0078A340 /* AudioDetailViewController.swift in Sources */,
 				CA4312A726650E8F00861D59 /* TourTableViewCell.swift in Sources */,
+				CA91DA7B266E34110078A340 /* AllBlogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
